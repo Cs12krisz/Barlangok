@@ -1,6 +1,6 @@
 ﻿namespace Barlangok
 {
-    internal class Program
+    public class Program
     {
         static Barlang[] barlangok = new Barlang[1000];
         static void Main(string[] args)
