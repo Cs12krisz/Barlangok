@@ -1,0 +1,16 @@
+C:\Users\Krisz\Desktop\emelt digi programok\Barlangok\Barlangok\bin\Debug\net8.0\Barlangok.exe
+C:\Users\Krisz\Desktop\emelt digi programok\Barlangok\Barlangok\bin\Debug\net8.0\Barlangok.deps.json
+C:\Users\Krisz\Desktop\emelt digi programok\Barlangok\Barlangok\bin\Debug\net8.0\Barlangok.runtimeconfig.json
+C:\Users\Krisz\Desktop\emelt digi programok\Barlangok\Barlangok\bin\Debug\net8.0\Barlangok.dll
+C:\Users\Krisz\Desktop\emelt digi programok\Barlangok\Barlangok\bin\Debug\net8.0\Barlangok.pdb
+C:\Users\Krisz\Desktop\emelt digi programok\Barlangok\Barlangok\obj\Debug\net8.0\Barlangok.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Krisz\Desktop\emelt digi programok\Barlangok\Barlangok\obj\Debug\net8.0\Barlangok.AssemblyInfoInputs.cache
+C:\Users\Krisz\Desktop\emelt digi programok\Barlangok\Barlangok\obj\Debug\net8.0\Barlangok.AssemblyInfo.cs
+C:\Users\Krisz\Desktop\emelt digi programok\Barlangok\Barlangok\obj\Debug\net8.0\Barlangok.csproj.CoreCompileInputs.cache
+C:\Users\Krisz\Desktop\emelt digi programok\Barlangok\Barlangok\obj\Debug\net8.0\Barlangok.sourcelink.json
+C:\Users\Krisz\Desktop\emelt digi programok\Barlangok\Barlangok\obj\Debug\net8.0\Barlangok.dll
+C:\Users\Krisz\Desktop\emelt digi programok\Barlangok\Barlangok\obj\Debug\net8.0\refint\Barlangok.dll
+C:\Users\Krisz\Desktop\emelt digi programok\Barlangok\Barlangok\obj\Debug\net8.0\Barlangok.pdb
+C:\Users\Krisz\Desktop\emelt digi programok\Barlangok\Barlangok\obj\Debug\net8.0\Barlangok.genruntimeconfig.cache
+C:\Users\Krisz\Desktop\emelt digi programok\Barlangok\Barlangok\obj\Debug\net8.0\ref\Barlangok.dll
+C:\Users\Krisz\Desktop\emelt digi programok\Barlangok\Barlangok\bin\Debug\net8.0\barlangok.txt
