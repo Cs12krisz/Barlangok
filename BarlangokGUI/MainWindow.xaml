@@ -15,8 +15,8 @@
         <TextBox x:Name="tbxHossz" HorizontalAlignment="Left" Margin="115,128,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="tbxMely" HorizontalAlignment="Left" Margin="115,164,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Button Content="Barlang keresése" HorizontalAlignment="Left" Margin="267,47,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-        <Button Content="Adatok mentése" HorizontalAlignment="Left" IsEnabled="False" Margin="269,145,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
-        <Label x:Name="lBarlangNev" Content="" HorizontalAlignment="Left" Margin="128,86,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="bMentes" Content="Adatok mentése" HorizontalAlignment="Left" IsEnabled="False" Margin="269,145,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+        <Label x:Name="lBarlangNev" Content="" HorizontalAlignment="Left" Margin="120,86,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

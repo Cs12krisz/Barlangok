@@ -18,6 +18,7 @@ namespace BarlangokGUI
     public partial class MainWindow : Window
     {
         static int barlangDB;
+        static Barlang kivalasztottBarlang;
         public MainWindow()
         {
             InitializeComponent();
@@ -37,9 +38,11 @@ namespace BarlangokGUI
 
                 if (i < barlangDB)
                 {
-                    lBarlangNev.Content = Program.barlangok[i].Nev;
-                    tbxHossz.Text = Program.barlangok[i].Hossz.ToString();
-                    tbxMely.Text = Program.barlangok[i].Melyseg.ToString();
+                    kivalasztottBarlang = Program.barlangok[i];
+                    lBarlangNev.Content = kivalasztottBarlang.Nev;
+                    tbxHossz.Text = kivalasztottBarlang.Hossz.ToString();
+                    tbxMely.Text = kivalasztottBarlang.Melyseg.ToString();
+                    bMentes.IsEnabled = true;
                 }
                 else
                 {
@@ -55,6 +58,28 @@ namespace BarlangokGUI
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            if (int.Parse(tbxHossz.Text) < kivalasztottBarlang.Hossz)
+            {
+                MessageBox.Show("A hossz nem lehet kisebb a korábbi értéknél!");
+                tbxAzon.Text = "";
+                lBarlangNev.Content = "";
+                tbxHossz.Text = "";
+                tbxMely.Text = "";
+            }
+            else if (int.Parse(tbxMely.Text) < kivalasztottBarlang.Melyseg)
+            {
+                MessageBox.Show("A mélység nem lehet kisebb a korábbi értéknél!");
+                tbxAzon.Text = "";
+                lBarlangNev.Content = "";
+                tbxHossz.Text = "";
+                tbxMely.Text = "";
+            }
+            else 
+            { 
+                kivalasztottBarlang.Hossz = int.Parse(tbxHossz.Text);
+                kivalasztottBarlang.Melyseg = int.Parse(tbxMely.Text);
+            }
+
 
         }
 
