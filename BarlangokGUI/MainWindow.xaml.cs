@@ -1,4 +1,6 @@
-﻿using System.Text;
+﻿using System;
+using System.IO;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -78,8 +80,40 @@ namespace BarlangokGUI
             { 
                 kivalasztottBarlang.Hossz = int.Parse(tbxHossz.Text);
                 kivalasztottBarlang.Melyseg = int.Parse(tbxMely.Text);
+                bFelvitel.IsEnabled = true;
             }
 
+
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            string baseDir = AppDomain.CurrentDomain.BaseDirectory;
+            string solutionRoot = System.IO.Path.GetFullPath(System.IO.Path.Combine(baseDir, @"..\..\..\..\"));
+            string mappa = "Barlangok";              
+            string fajlNeve = "barlangok.txt";
+
+
+            string teljesUtvonal = System.IO.Path.Combine(
+                solutionRoot,
+                mappa,
+                fajlNeve
+            );
+            MessageBox.Show(teljesUtvonal);
+
+            using (StreamWriter sr = new StreamWriter(teljesUtvonal))
+            {
+                sr.WriteLine("azon;nev;hossz;melyseg;telepules;vedettseg");
+                for (int i = 0; i < barlangDB; i++)
+                {
+                    Barlang barlang = Program.barlangok[i];
+                    sr.WriteLine($"{barlang.Azon};{barlang.Nev};{barlang.Hossz};{barlang.Melyseg};{barlang.Telepules};{barlang.Vedettseg}");
+                }
+                
+
+            }
+            bFelvitel.IsEnabled = false;
+            bMentes.IsEnabled = false;
 
         }
 
