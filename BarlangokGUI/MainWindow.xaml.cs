@@ -17,13 +17,47 @@ namespace BarlangokGUI
     /// </summary>
     public partial class MainWindow : Window
     {
-        Barlang[] barlangok = new Barlang[1000]; 
+        static int barlangDB;
         public MainWindow()
         {
             InitializeComponent();
-            int barlangDb = Program.Feladat3("barlangok.txt");
-            MessageBox.Show(barlangDb.ToString());
+            barlangDB = Program.Feladat3("barlangok.txt");
 
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (tbxAzon.Text != "")
+            {
+                int i = 0;
+                while (i < barlangDB && Program.barlangok[i].Azon != int.Parse(tbxAzon.Text))
+                {
+                    i++;
+                }
+
+                if (i < barlangDB)
+                {
+                    lBarlangNev.Content = Program.barlangok[i].Nev;
+                    tbxHossz.Text = Program.barlangok[i].Hossz.ToString();
+                    tbxMely.Text = Program.barlangok[i].Melyseg.ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Ezzel az azonosítóval nem létezik barlang!");
+                    tbxAzon.Text = "";
+                    lBarlangNev.Content = "";
+                    tbxHossz.Text = "";
+                    tbxMely.Text = "";
+                }
+            }
+            
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+
     }
 }

@@ -11,11 +11,12 @@
         <Label Content="Barlang neve:" HorizontalAlignment="Left" Margin="34,86,0,0" VerticalAlignment="Top"/>
         <Label Content="Hosszúság:" HorizontalAlignment="Left" Margin="34,124,0,0" VerticalAlignment="Top" Width="76"/>
         <Label Content="Mélység:" HorizontalAlignment="Left" Margin="34,160,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Margin="115,49,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="115,128,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="115,164,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Barlang keresése" HorizontalAlignment="Left" Margin="267,47,0,0" VerticalAlignment="Top"/>
-        <Button Content="Adatok mentése" HorizontalAlignment="Left" IsEnabled="False" Margin="269,145,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxAzon" HorizontalAlignment="Left" Margin="115,49,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbxHossz" HorizontalAlignment="Left" Margin="115,128,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbxMely" HorizontalAlignment="Left" Margin="115,164,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Barlang keresése" HorizontalAlignment="Left" Margin="267,47,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button Content="Adatok mentése" HorizontalAlignment="Left" IsEnabled="False" Margin="269,145,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+        <Label x:Name="lBarlangNev" Content="" HorizontalAlignment="Left" Margin="128,86,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

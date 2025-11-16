@@ -1,15 +1,15 @@
 ﻿namespace Barlangok
 {
-    public class Program
+    public  class Program
     {
-        static Barlang[] barlangok = new Barlang[1000];
+        public static Barlang[] barlangok = new Barlang[1000];
         static void Main(string[] args)
         {
             int barlangDb = Feladat3("barlangok.txt");
             Feladat4(barlangDb);
             Feladat5(barlangDb);
             Feladat6(barlangDb);
-            Feldat7(barlangDb);
+            Feladat7(barlangDb);
         }
 
         static public int Feladat3(string fajlnev)
@@ -80,7 +80,7 @@
 
         }
 
-        static public void Feldat7(int db)
+        static public void Feladat7(int db)
         {
             Barlang[] elerhetobarlangok = new Barlang[db];
             int i = 0;
