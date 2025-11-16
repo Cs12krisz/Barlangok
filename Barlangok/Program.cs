@@ -9,6 +9,7 @@
             Feladat4(barlangDb);
             Feladat5(barlangDb);
             Feladat6(barlangDb);
+            Feldat7(barlangDb);
         }
 
         static public int Feladat3(string fajlnev)
@@ -66,8 +67,46 @@
                 i++;
             }
             var LeghosszabBarlangVedettsegSzerint = elerhetobarlangok.Where(barlang => barlang.Vedettseg == vedettsegiSzint).MaxBy(barlang => barlang.Hossz);
-            Console.WriteLine(LeghosszabBarlangVedettsegSzerint);
 
+            if (LeghosszabBarlangVedettsegSzerint != null)
+            {
+                Console.WriteLine(LeghosszabBarlangVedettsegSzerint);
+            }
+            else
+            {
+                Console.WriteLine("\tNincs ilyen védettségi szinttel barlang az adatok között!");
+            }
+
+
+        }
+
+        static public void Feldat7(int db)
+        {
+            Barlang[] elerhetobarlangok = new Barlang[db];
+            int i = 0;
+            while (i < db)
+            {
+                elerhetobarlangok[i] = barlangok[i];
+                i++;
+            }
+
+            var barlangokCsoportositvaVedettsegSzerint = elerhetobarlangok.GroupBy(barlang => barlang.Vedettseg);
+            Console.WriteLine("7. feladat: Statisztika");
+            foreach (var group in barlangokCsoportositvaVedettsegSzerint)
+            {
+                if (group.Key == "fokozottan védett")
+                {
+                    Console.WriteLine($"\t{group.Key}:------------> {group.Count()} db");
+                }
+                else if (group.Key == "megkülönböztetetten védett")
+                {
+                    Console.WriteLine($"\t{group.Key}:---> {group.Count()} db");
+                }
+                else if (group.Key == "védett")
+                {
+                    Console.WriteLine($"\t{group.Key}:-----------------------> {group.Count()} db");
+                }
+            }
         }
     }
 }

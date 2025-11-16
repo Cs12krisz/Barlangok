@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Barlangok")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4487d8f546a749982868aea6d8b552af64e84be8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af137ab85c72d99fdb78e30a73e70cbd1864f078")]
 [assembly: System.Reflection.AssemblyProductAttribute("Barlangok")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Barlangok")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
