@@ -52,7 +52,7 @@
                 i++;
             }
             double atlag = melysegSum / miskolcidb; ;
-            Console.WriteLine($"5. feladat: Az átlagos mélysége: {atlag:f3} m");
+            Console.WriteLine($"5. feladat: Az átlagos mélység: {atlag:f3} m");
         }
 
         static public void Feladat6(int db)
