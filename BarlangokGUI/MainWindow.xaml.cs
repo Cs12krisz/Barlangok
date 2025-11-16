@@ -88,6 +88,7 @@ namespace BarlangokGUI
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
+
             string baseDir = AppDomain.CurrentDomain.BaseDirectory;
             string solutionRoot = System.IO.Path.GetFullPath(System.IO.Path.Combine(baseDir, @"..\..\..\..\"));
             string mappa = "Barlangok";              
@@ -99,7 +100,6 @@ namespace BarlangokGUI
                 mappa,
                 fajlNeve
             );
-            MessageBox.Show(teljesUtvonal);
 
             using (StreamWriter sr = new StreamWriter(teljesUtvonal))
             {

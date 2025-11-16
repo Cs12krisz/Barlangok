@@ -1,5 +1,5 @@
 azon;nev;hossz;melyseg;telepules;vedettseg
-1;Abaligeti-barlang;18933;10;Abaliget;fokozottan védett
+1;Abaligeti-barlang;1893;10;Abaliget;fokozottan védett
 2;Acheron-kútbarlang;215;0;Cserszegtomaj;fokozottan védett
 3;Achilles-víznyelőbarlang;140;28;Orfű;megkülönböztetetten védett
 4;Ajándék-barlang;3140;184;Esztergom;fokozottan védett
